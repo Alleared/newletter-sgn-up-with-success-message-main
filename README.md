@@ -1,0 +1,1 @@
+This is my third javascript newbie challenge. I'm learning a lot of the logic needed to write code and I hope I can get to Junior challenges soon. But meanwhile, any tips on how to write documentation properly and is there a easier way to show a page without generating new HTML in Javascript?

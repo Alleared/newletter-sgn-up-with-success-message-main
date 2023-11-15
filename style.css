@@ -1,0 +1,213 @@
+.attribution { font-size: 11px; text-align: center; color: white;}
+.attribution a { color: hsl(0, 0%, 100%); }
+
+/* GOOGLE FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  /* --------- COLORS ---------- */
+  /* Primary */
+  --TOMATO: hsl(4, 100%, 67%);
+  --REDISH-ORANGE: hsl(357, 100%, 59%);
+
+  /* Neutral */
+  --DARK-SLATE-GREY: hsl(234, 29%, 20%);
+  --CHARCOAL-GREY: hsl(235, 18%, 26%);
+  --GREY: hsl(231, 7%, 60%);
+  --WHITE: hsl(0, 0%, 100%);
+
+
+}
+
+/* BODY STYLES */
+
+body {
+  font: 1rem 'Roboto';
+  background-color: var(--DARK-SLATE-GREY);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* --------- MAIN ARTICLE STYLES --------- */
+article {
+  margin: 2rem;
+}
+
+h1 {
+  font: bold 3.5rem 'Roboto';
+  margin: 1rem 0 2rem;
+  color: var(--DARK-SLATE-GREY);
+}
+
+h2 {
+  font: bold .8rem 'Roboto';
+  color: var(--DARK-SLATE-GREY);
+}
+
+/* Article container */
+.article-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--WHITE);
+  padding: 1rem;
+  border-radius: 30px;
+}
+
+/* Stay update container   */
+.stay-updated-container {
+  max-width: 450px;
+  padding: 1rem;
+}
+
+
+/* Success element showing what we can offer */
+.success-container {
+  margin: 2rem 0;
+}
+
+.success-div {
+  display: flex;
+  gap: .5rem;
+  margin: .5rem 0;
+  
+}
+
+.success-icon {
+  width: 20px;
+}
+
+/* Submit email container */
+.email-container, form {
+  display: flex;
+  flex-direction: column;
+  max-width: 21.875rem;
+}
+
+.email-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-div span {
+  font: bold .8rem 'Roboto';
+  color: var(--REDISH-ORANGE);
+}
+
+.input-email, .submit-email-button, .dismiss-button {
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.input-email {
+  margin: 1rem 0;
+  border: 1px solid var(--GREY);
+}
+
+.submit-email-button, .dismiss-button {
+  background-color: var(--DARK-SLATE-GREY);
+  color: var(--WHITE);
+  font: bold 1rem 'Roboto';
+  border: none;
+  transition: opacity .3s;
+}
+
+.submit-email-button:hover, .dismiss-button:hover {
+  background-image: linear-gradient(to right, var(--REDISH-ORANGE), var(--TOMATO));
+  cursor: pointer;
+  opacity: .6;
+}
+
+/* Illustration container */
+
+.illustration-sign-up-desktop {
+  /* max-width: 400px; */
+  
+}
+
+
+/* --------- THANKS CONTAINER STYLES --------- */
+
+.thanks-container {
+  max-width: 400px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.dismiss-button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.dismiss-button {
+  width: 100%;
+  margin: 2rem 0 0;
+
+}
+
+/* BOLD TEXT SPAN */
+.bold-text {
+  font-weight: bold;
+}
+
+
+/* MEDIA QUERIES */
+
+/* MOBILE SIZE */
+/* less than 800pixels */
+@media (max-width: 800px) {
+
+  /* Article container */
+  .article-container {
+    flex-direction: column-reverse;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .stay-updated-container {
+    padding: 2rem;
+  }
+
+  /* Illustration container */
+
+  .illustration-container, .illustration-sign-up-desktop {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  /* Submit email container */
+  .email-container {
+    margin: 1rem auto;
+  }
+
+  .input-email, .submit-email-button {
+    width: 100%;
+  }
+
+  /* THANK YOU CONTAINER */
+
+  .thanks-container {
+    height: 665px;
+    justify-content: space-between;
+    margin: 200px 0 0;
+  }
+
+
+}
